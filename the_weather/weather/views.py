@@ -28,7 +28,7 @@ def index(request):
         }
 
         weather_data.append(weather) #add the data for the current city into our list
-        weather_data.reverse()
+        weather_data.reverse() #print data of city as it entered in the list
     
     context = {'weather_data' : weather_data, 'form' : form}
 
