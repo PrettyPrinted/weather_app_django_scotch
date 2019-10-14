@@ -3,6 +3,14 @@ import requests
 from .models import City
 from .forms import CityForm
 
+from selenium import webdriver
+import time
+import urllib
+import urllib2
+
+x=raw_input("Enter the URL")
+refreshrate=raw_input("Enter the number of seconds")
+
 def index(request):
     cities = City.objects.all() #return all the cities in the database
 
